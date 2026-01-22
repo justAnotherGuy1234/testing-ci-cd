@@ -12,7 +12,7 @@ jobs:
       - name : check out respository  code`
         uses : actions/checkout@v4
       - name : list all the files in the repo
-      - run : |
+        run : |
           ls ${{ github.workspace  }}
       - run : echo "this job status is {{job.status}}."
 
